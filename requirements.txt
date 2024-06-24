@@ -1,15 +1,19 @@
-tensorflow==2.12.0
+# tensorflow==2.12.0
+tensorflow
 pandas 
 dvc
-mlflow==2.2.2
+mlflow
+# mlflow==2.2.2
 notebook
 numpy
 matplotlib
 seaborn
-python-box==6.0.2
+python-box
+# python-box==6.0.2
 pyYAML
 tqdm
-ensure==1.0.2
+ensure
+# ensure==1.0.2
 joblib
 types-PyYAML
 scipy
