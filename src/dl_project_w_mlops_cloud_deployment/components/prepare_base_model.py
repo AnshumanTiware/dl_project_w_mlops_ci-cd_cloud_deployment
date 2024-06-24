@@ -1,12 +1,12 @@
 import os
-from pathlib import Path
 import urllib.request as request
 from zipfile import ZipFile
 import tensorflow as tf
-
+from pathlib import Path
 from dl_project_w_mlops_cloud_deployment.entity.config_entity import PrepareBaseModelConfig
 
-class PrepareBaseModel:                                                # Here the actual work happens 
+
+class PrepareBaseModel:
     def __init__(self, config: PrepareBaseModelConfig):
         self.config = config
 
@@ -52,7 +52,7 @@ class PrepareBaseModel:                                                # Here th
         return full_model
     
     
-    def update_base_model(self):                                # just prepares the full model and saves it 
+    def update_base_model(self):
         self.full_model = self._prepare_full_model(
             model=self.model,
             classes=self.config.params_classes,
@@ -68,3 +68,4 @@ class PrepareBaseModel:                                                # Here th
     @staticmethod
     def save_model(path: Path, model: tf.keras.Model):
         model.save(path)
+
