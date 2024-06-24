@@ -6,9 +6,9 @@ with open("README.md", "r", encoding="utf-8") as f:
 
 __version__ = "0.0.0"
 
-REPO_NAME = "dl_project_w_mlops_cloud-deployment"
+REPO_NAME = "dl_project_w_mlops_cloud_deployment"
 AUTHOR_USER_NAME = "AnshumanTiware"
-SRC_REPO = "dl_project_w_mlops_cloud-deployment"
+SRC_REPO = "dl_project_w_mlops_cloud_deployment"
 AUTHOR_EMAIL = "mr.anshumantiwari@gmail.com"
 
 
