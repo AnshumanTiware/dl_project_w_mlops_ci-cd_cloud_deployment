@@ -18,7 +18,7 @@ class EvaluationPipeline:
         evaluation.evaluation()
         evaluation.save_score()
         evaluation.intialize_mlflow()
-        evaluation.log_into_mlflow()
+        # evaluation.log_into_mlflow() not needed after experiments are finished before deployment 
 
 
 
