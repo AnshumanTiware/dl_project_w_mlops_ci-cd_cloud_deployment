@@ -1,7 +1,7 @@
 from dl_project_w_mlops_cloud_deployment.constants import *
 import os
-from dl_project_w_mlops_cloud_deployment.entity.config_entity import DataIngestionConfig, PrepareBaseModelConfig, TrainingConfig
-from dl_project_w_mlops_cloud_deployment.utils.common import read_yaml, create_directories
+from dl_project_w_mlops_cloud_deployment.entity.config_entity import DataIngestionConfig, EvaluationConfig, PrepareBaseModelConfig, TrainingConfig
+from dl_project_w_mlops_cloud_deployment.utils.common import read_yaml, create_directories, save_json
 
 class ConfigurationManager:
     def __init__(
@@ -71,3 +71,14 @@ class ConfigurationManager:
         )
 
         return training_config
+    
+    def get_evaluation_config(self) -> EvaluationConfig:
+        eval_config = EvaluationConfig(
+            path_of_model="artifacts/training/model.keras",
+            training_data="artifacts/data_ingestion/kidney-ct-scan-image",
+            mlflow_uri="https://dagshub.com/AnshumanTiware/dl_project_w_mlops_cloud_deployment.mlflow",
+            all_params=self.params,
+            params_image_size=self.params.IMAGE_SIZE,
+            params_batch_size=self.params.BATCH_SIZE
+        )
+        return eval_config

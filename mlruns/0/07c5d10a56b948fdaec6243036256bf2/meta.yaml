@@ -1,0 +1,15 @@
+artifact_uri: file:///G:/Data-Science-2024/end-to-end-projects/dl_project_w_mlops_cloud-deployment/mlruns/0/07c5d10a56b948fdaec6243036256bf2/artifacts
+end_time: 1719304010535
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 07c5d10a56b948fdaec6243036256bf2
+run_name: agreeable-shrike-83
+run_uuid: 07c5d10a56b948fdaec6243036256bf2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1719303987699
+status: 3
+tags: []
+user_id: Anshuman
