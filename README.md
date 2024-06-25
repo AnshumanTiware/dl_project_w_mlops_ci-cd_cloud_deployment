@@ -1,8 +1,8 @@
 # Deep Learning Model Deployment As a Web App (with MLFLOW, DVC, Flask, Docker, Github Actions, AWS & Azure)
 
-In this project, a deep learning image classification model (model to classify the CT scan of kidney as normal or tumor) has been deployed as a flask web application to cloud (AWS and Azure). The intial code was written as jupyter notebooks (available in the research directory). These notebooks were used to develop the entire pipeline including - data ingestion, preparation of the model (VGG16 model with custom dense layers at the end), model training and model evaluation.
+In this project, a deep learning image classification model (model to classify the CT scan of kidney as normal or tumor) has been deployed as a flask web application to cloud (AWS and Azure). The initial code was written as jupyter notebooks (available in the research directory). These notebooks were used to develop the entire pipeline including - data ingestion, preparation of the model (VGG16 model with custom dense layers at the end), model training and model evaluation.
 The experiments were tracked with MLFLow. A basic web interface was developed to serve the predictions.
-Thereafter, a CI CD workdflow was created using Docker and Github actions. to deploy the application to AWS and Azure.
+Thereafter, a CI CD workflow was created using Docker and Github actions. to deploy the application to AWS and Azure.
 
 ## Authors
 
